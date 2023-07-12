@@ -1,0 +1,27 @@
+{
+  "PoliciesSettings": {
+    "PoliciesGlobalConfiguration": {
+      "MaxRetries": 3,
+      "TimeToWaitInMilliseconds": 1000
+    },
+    "Policies": [
+      {
+        "Name": "RetryPolicy",
+        "Type": "Retry"
+      },
+      {
+        "Name": "WaitAndRetryPolicy",
+        "Type": "WaitAndRetry"
+      },
+      {
+        "Name": "TimeoutPolicy",
+        "Type": "Timeout",
+        "TimeToWaitInMilliseconds": 5000
+      },
+      {
+        "Name": "FallbackPolicy",
+        "Type": "Fallback"
+      }
+    ]
+  }
+}
